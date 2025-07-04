@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Sobre Flores e Folhas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <h1>Sobre Flores e Folhas</h1>
+            <p>Floricultura</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="produtos.html" class="active">Produtos</a></li>
+                <li><a href="#">Floricultura</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="products-header">
+            <h2>Nossos Produtos</h2>
+            <p>Encontre a perfeição floral para cada ocasião</p>
+        </section>
+
+        <section class="filters">
+            <div class="filter-group">
+                <h4>Categorias</h4>
+                <select>
+                    <option>Todas as categorias</option>
+                    <option>Buquês</option>
+                    <option>Arranjos</option>
+                    <option>Plantas</option>
+                    <option>Presentes</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <h4>Ordenar por</h4>
+                <select>
+                    <option>Mais populares</option>
+                    <option>Menor preço</option>
+                    <option>Maior preço</option>
+                    <option>Mais recentes</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <h4>Preço</h4>
+                <input type="range" min="50" max="500" value="500" class="price-slider">
+                <div class="price-range">Até R$500</div>
+            </div>
+        </section>
+
+        <section class="product-grid">
+            <!-- Produto 1 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('./img/flores-lirios.jpg')"></div>
+                <div class="product-details">
+                    <h3>Buquê de Flores do Campo</h3>
+                    <div class="price">R$139,80</div>
+                    <div class="rating">★★★★☆ (4.5)</div>
+                    <button class="add-to-cart">Adicionar</button>
+                </div>
+                <div class="product-badge">Mais vendido</div>
+            </div>
+
+            <!-- Produto 2 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('./img/rosas-vermelhas.jpg')"></div>
+                <div class="product-details">
+                    <h3>Rosas Vermelhas Premium</h3>
+                    <div class="price">R$189,90</div>
+                    <div class="rating">★★★★★ (4.9)</div>
+                    <button class="add-to-cart">Adicionar</button>
+                </div>
+                <div class="product-badge new">Novo</div>
+            </div>
+
+            <!-- Produto 3 -->
+            <div class="product-card">
+                <div class="product-image" style="background-image: url('./img/arranjo-girassois.jpg')"></div>
+                <div class="product-details">
+                    <h3>Arranjo de Girassóis</h3>
+                    <div class="price">R$159,90</div>
+                    <div class="rating">★★★★☆ (4.3)</div>
+                    <button class="add-to-cart">Adicionar</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="pagination">
+            <button class="page-btn active">1</button>
+            <button class="page-btn">2</button>
+            <button class="page-btn">3</button>
+            <button class="page-btn next">Próximo →</button>
+        </div>
+    </main>
+
+    <footer>
+        <div class="help-section">
+            <h4>Ajuda com Entrega</h4>
+            <p>Entre em contato para dúvidas sobre entregas e pedidos.</p>
+            <div class="contact-info">
+                <p>📞 (41) 98765-4321</p>
+                <p>✉️ contato@sobrefolhasetelas.com</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2023 Sobre Folhas e Telas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
